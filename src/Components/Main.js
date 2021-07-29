@@ -1,14 +1,17 @@
 import React from "react";
 
-// COMPONENTS
+// components
 import Banner from "./Banner";
 
-function Main() {
+const Main = () => {
   return (
-    <div className="main">
+    <div
+      className="main min-h-screen w-full bg-red-300 sm:w-1/2 sm:bg-pink-200 border-r border-l border-gray-100"
+      style={{ backgroundColor: "#e3e0cf" }}
+    >
       <Banner />
     </div>
   );
-}
+};
 
 export default Main;
