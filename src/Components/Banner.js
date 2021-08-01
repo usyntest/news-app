@@ -1,19 +1,23 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+// COMPONENTS
+import Loader from "./Loader";
+
 const Banner = () => {
   const [response, setResponse] = useState([]);
 
-  const getData = async () => {
+  async function getData() {
     try {
-      const res = await axios.get(
-        "https://newsapi.org/v2/top-headlines?country=in&pageSize=5&apiKey=6705ce8cd4b54b628b152ddb87e51f4b"
-      );
+      let res = await axios({
+        url: "https://newsapi.org/v2/top-headlines?country=in&pageSize=5&apiKey=6705ce8cd4b54b628b152ddb87e51f4b",
+        method: "get",
+      });
       return res.data.articles;
-    } catch (error) {
-      console.error(error);
+    } catch (err) {
+      console.error(err);
     }
-  };
+  }
 
   useEffect(() => {
     getData().then((res) => setResponse(res));
@@ -22,6 +26,7 @@ const Banner = () => {
   return (
     // bg-purple-200
     <div className="banner w-full  h-64 sm:h-76 rounded-b-xl">
+      {/* {response ? <BannerRender /> : <Loader />} */}
       {response.map((elm, index) => {
         return <BannerPost elm={elm} index={index} key={Math.random()} />;
       })}
