@@ -76,7 +76,7 @@ const BannerPost = ({ elm, index }) => {
       </div>
 
       <button
-        className="banner-btn absolute top-20 sm:top-28 left-0"
+        className="banner-btn absolute top-20 sm:top-28 left-4"
         onClick={prev}
       >
         <svg
@@ -95,7 +95,7 @@ const BannerPost = ({ elm, index }) => {
         </svg>
       </button>
       <button
-        className="banner-btn absolute top-20 sm:top-28 right-0"
+        className="banner-btn absolute top-20 sm:top-28 right-4"
         onClick={next}
       >
         <svg

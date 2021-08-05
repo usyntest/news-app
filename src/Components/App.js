@@ -1,8 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 // COMPONENTS
 // import Menu from "./Menu";
 import Main from "./Main";
+import CategoryPage from "./CategoryPage";
+
 // MY_API_KEY = "d67e3f72f16b4d128eee209543355183"
 
 // new email1 = gomiriv852@dedatre.com
@@ -18,6 +21,7 @@ function App() {
         {/* <Menu /> */}
         <Switch>
           <Route path="/" exact component={Main} />
+          <Route path="/category/:type" component={CategoryPage} />
         </Switch>
       </div>
     </Router>
