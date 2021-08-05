@@ -51,15 +51,17 @@ const BannerPost = ({ elm, index }) => {
           : "banner-post h-full w-full relative rounded-b-xl hidden "
       }
     >
-      {elm.urlToImage != null ? (
+      {
         <img
           className="sm:max-h-full sm:w-full w-full h-64 opacity-75 hover:opacity-80 rounded-b-xl"
-          src={elm.urlToImage}
+          src={
+            elm.urlToImage
+              ? elm.urlToImage
+              : "https://1080motion.com/wp-content/uploads/2018/06/NoImageFound.jpg.png"
+          }
           alt=""
         />
-      ) : (
-        <h1 className="max-h-full w-full">Error</h1>
-      )}
+      }
       <div className="absolute bottom-3 sm:bottom-4 left-4 ">
         <a href={elm.url}>
           <p className="antialiased lg:overflow-cliptruncate sm:subpixel-antialiased md:antialiaseds text-lg sm:text-xl font-bold hover:underline text-gray-100">

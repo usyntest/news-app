@@ -1,6 +1,6 @@
 import React from "react";
 
-// components
+// COMPONENTS
 import Banner from "./Banner";
 import CategorySection from "./CategorySection";
 import { categories } from "./categories";
