@@ -12,7 +12,7 @@ This is a simple news app made with react which consumes the newsAPI.
 
 **3. React-Router-Dom** (For routing)
 <br>
-###### i haven't deployed the project yet but will do it soon. And, sorry if it does not have enough comments
+###### i deployed the project at usyntest-news-app.netlify.app bit its not working the server is returning a status code of 426, and i'm too lazy to fix it. JUST READ THE CODE
 
 ## How To Run The Project
 
