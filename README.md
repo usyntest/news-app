@@ -12,7 +12,12 @@ This is a simple news app made with react which consumes the newsAPI.
 
 **3. React-Router-Dom** (For routing)
 <br>
-###### i deployed the project at usyntest-news-app.netlify.app bit its not working the server is returning a status code of 426, and i'm too lazy to fix it. JUST READ THE CODE
+i deployed the project at usyntest-news-app.netlify.app bit its not working the server is returning a status code of 426, and i'm too lazy to fix it. JUST READ THE CODE
+
+__EDIT__: _Newsapi changed their pricing model._
+_You can't make requests from the browser anymore, you'll have to use a backend. I had the same problem and the easiest way around it was implementing a Node (Express) server._
+_(https://stackoverflow.com/a/62199155 "Stackoverflow answer")_
+
 
 ## How To Run The Project
 
